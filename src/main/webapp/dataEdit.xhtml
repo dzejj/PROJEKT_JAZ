@@ -11,40 +11,38 @@
     
      <h:panelGrid columns="2">
 
-				<h:outputText value="#{msg.tankTankLabel}" />
-				<h:outputText id="tankid" value="#{tankBean.tank.tank_id}" />
-				
-				<h:outputText value="#{msg.vehicleNameLabel}" />
-				<h:outputText id="vname" value="#{tankBean.tank.vehicleName}" />
+				<h:outputText value="#{msg.personFirstNameLabel}" />
+				<h:outputText id="name" value="#{studentBean.student.firstName}" />
 
-				<h:outputText value="#{msg.vehicleCountryOfOriginLabel}" />
-				<h:outputText id="countryoforigin" value="#{tankBean.tank.vehicleCountryOfOrigin}" />
-					
-				<h:outputText value="#{msg.vehicleClassLabel}" />
-				<h:outputText id="vehicleclass" value="#{tankBean.tank.vehicleCountryOfOrigin}" />
-					
-				<h:outputText value="#{msg.avgArmorLabel}" />
-				<h:outputText id="vehiclearmor" value="#{tankBean.tank.avgArmor}" />
-					
-				<h:outputText value="#{msg.avgArmorPenetrationLabel}" />
-				<h:outputText id="vehiclepenetration" value="#{tankBean.tank.avgArmorPenetration}" />
-					
-				<h:outputText value="#{msg.avgRateOfFireLabel}" />
-				<h:outputText id="rateoffire" value="#{tankBean.tank.avgRateOfFire}" />
-					
-				<h:outputText value="#{msg.stockEnginePowerLabel}" />
-				<h:outputText id="stockenginepower" value="#{tankBean.tank.stockEnginePower}" />
-					
-				<h:outputText value="#{msg.yearOfProductionLabel}" />
-				<h:outputText id="yearofproduction" value="#{tankBean.tank.yearOfProduction}" />
-					
+				<h:outputText value="#{msg.personLastNameLabel}" />
+				<h:outputText id="surname" value="#{studentBean.student.lastName}" />
+				
+				<h:outputText value="#{msg.studentAlbum}" />
+				<h:outputText id="album" value="#{studentBean.student.album_id}" />
+
+				<h:outputText value="#{msg.personPinLabel}" />
+				<h:outputText id="yob" value="#{studentBean.student.pin}" />
+				
+				<h:outputText value="#{msg.personZipCodeLabel}" />
+				<h:outputText id="zipcode" value="#{studentBean.student.zipCode}" />
+
+				<h:outputText value="#{msg.personTownLabel}" />
+				<h:outputText id="town" value="#{studentBean.student.town}" />
+
+				<h:outputText value="#{msg.personDobLabel}" />
+				<h:outputText id="dateOfBirth" value="#{studentBean.student.dateOfBirth}" />
+							
+
 	</h:panelGrid>
-         <f:facet name="header">#{msg.action}</f:facet>
-        <h:commandButton value="#{msg.vehicleFormOKButton}"
-				action="#{tankBean.addTank}" />
-     		<h:commandButton value="#{msg.vehicleFormCorrectButton}"
-				action="#{tankBean.editTank}" />
       
+      
+        
+
+		<h:commandButton value="#{msg.personFormCorrectButton}"
+				action="#{studentBean.editStudent}" />
+      
+      
+     
     </h:form>
       
 	</ui:define>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/templates/default.xhtml"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+	
+	<ui:define name="content">
+	
+    <h:form>
+    
+     <rich:extendedDataTable value="#{bookBean.allTypes}"
+            var="item" id="table" frozenColumns="3"
+            style="height:300px; width:800px;" selectionMode="none">
+            
+      <f:facet name="header">#{msg.bookAllLabel}</f:facet>
+      
+      <rich:column>
+        <f:facet name="header">#{msg.authorAlbum}</f:facet>
+        #{item.id_book}
+      </rich:column>
+      
+      <rich:column>
+        <f:facet name="header">#{msg.authorFirstNameLabel}</f:facet>
+        #{item.authorfirstname}
+      </rich:column>
+      
+      <rich:column>
+        <f:facet name="header">#{msg.authorLastNameLabel}</f:facet>
+        #{item.authorlastname}
+      </rich:column>
+      
+      <rich:column>
+        <f:facet name="header">#{msg.authorTitleLabel}</f:facet>
+        #{item.title}
+      </rich:column>
+      
+    
+      
+      <rich:column>
+        <f:facet name="header">#{msg.action}</f:facet>
+        <h:commandLink value="#{msg.actionDelete}" action="#{bookBean.deleteType}"/>
+      </rich:column>
+      
+     </rich:extendedDataTable>
+    </h:form>
+      
+	</ui:define>
+	
+</ui:composition>

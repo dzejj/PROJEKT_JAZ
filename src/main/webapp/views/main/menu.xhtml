@@ -17,10 +17,16 @@
                 topGroupCollapsedRightIcon="chevronDown" itemLeftIcon="disc" itemChangeListener="#{panelMenuBean.updateCurrent}">
                 <rich:panelMenuGroup label="#{msg.linkHome}" action="home?faces-redirect=true">
                 </rich:panelMenuGroup>
-                <rich:panelMenuGroup label="Czołg" >
-                 <rich:panelMenuItem label="#{msg.tankAddLabel}" name="#addTank" action="addTank?faces-redirect=true"/>
-                <rich:panelMenuItem label="#{msg.vehicleEditLabel}" name="#editTank" action="editTank?faces-redirect=true"/>
-                    <rich:panelMenuItem label="#{msg.tankAllLabel}" name="showTanks" action="showTanks?faces-redirect=true"/>
+                <rich:panelMenuGroup label="Student" >
+                 <rich:panelMenuItem label="#{msg.studentAddLabel}" name="#addStudent" action="addStudent?faces-redirect=true"/>
+                <rich:panelMenuItem label="#{msg.personEditLabel}" name="#editStudent" action="editStudent?faces-redirect=true"/>
+                    <rich:panelMenuItem label="#{msg.studentAllLabel}" name="showStudents" action="showStudents?faces-redirect=true"/>
+                </rich:panelMenuGroup>
+                
+                        <rich:panelMenuGroup label="Book" >
+                 <rich:panelMenuItem label="#{msg.bookAddLabel}" name="#addType" action="addType?faces-redirect=true"/>
+                <rich:panelMenuItem label="#{msg.bookEditLabel}" name="#editType" action="editType?faces-redirect=true"/>
+                    <rich:panelMenuItem label="#{msg.bookAllLabel}" name="showTypes" action="showTypes?faces-redirect=true"/>
                 </rich:panelMenuGroup>
                 
                
