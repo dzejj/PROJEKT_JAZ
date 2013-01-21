@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>s9241</groupId>
-  <artifactId>JAZs9241</artifactId>
+  <artifactId>JAZ_s9241</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <url>http://maven.apache.org</url>
@@ -83,7 +83,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>JZ9241</finalName>
+		<finalName>JAZ_9241</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -107,5 +107,5 @@
 	
 	
 	
-	<name>Nowy_s9241</name>
+	<name>JAZ_s9241</name>
 </project>
